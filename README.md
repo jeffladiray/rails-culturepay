@@ -1,24 +1,36 @@
-# README
+# RAILS FOREST ADMIN - DEMO
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![HOME](https://img.freepik.com/free-vector/retro-80s-background-with-neon-triangle-mountain_1017-31139.jpg?w=1000)
 
-Things you may want to cover:
+* [Requirements](#Requirements)
+* [Configuration](#Configuration)
+* [Serving Rails](#Serving-Rails)
 
-* Ruby version
 
-* System dependencies
+# Requirements
 
-* Configuration
+- ruby >= 3
 
-* Database creation
+# Configuration
 
-* Database initialization
+### gemfile
+```
+bundle install
+```
 
-* How to run the test suite
+### .env file
+```
+cp .env.example .env
+```
+set your database connection (DB section)
+By default it's a postgres db
 
-* Services (job queues, cache servers, search engines, etc.)
+### migrate & seed
+```
+rails db:migrate && rails db:seed
+```
 
-* Deployment instructions
-
-* ...
+## Serving Rails
+```
+rails server
+```

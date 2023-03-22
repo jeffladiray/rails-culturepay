@@ -275,6 +275,7 @@ GEM
     zeitwerk (2.6.7)
 
 PLATFORMS
+  rails
   arm64-darwin-21
 
 DEPENDENCIES

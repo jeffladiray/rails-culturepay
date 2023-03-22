@@ -1,0 +1,11 @@
+<h1>Employees#new</h1>
+<p>Find me in app/views/employees/new.html.erb</p>
+<main class="container">
+    <%= link_to sanitize("&larr; Back to employees"), employees_path %>
+
+    <div class="header">
+        <h1>New employee</h1>
+    </div>
+
+    <%= render "form", employee: @employee %>
+</main>

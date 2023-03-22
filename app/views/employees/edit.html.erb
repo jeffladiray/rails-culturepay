@@ -1,0 +1,9 @@
+<main class="container">
+    <%= link_to sanitize("&larr; Back to employee"), employee_path(@employee) %>
+
+    <div class="header">
+        <h1>Edit employee</h1>
+    </div>
+
+    <%= render "form", employee: @employee %>
+</main>

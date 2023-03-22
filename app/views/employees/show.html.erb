@@ -1,0 +1,16 @@
+<main class="container">
+    <%= link_to sanitize("&larr; Back to employees"), employees_path %>
+    <div class="header">
+        <h1>
+            <%= @employee.first_name %> <%= @employee.last_name %>
+        </h1>
+        <br />
+        <%= link_to "Update information", edit_employee_path(@employee), class: "btn btn--light" %>
+        <br /><br />
+        <strong>id</strong> : <%= @employee.id %>
+        <br />
+        <strong>phone number</strong> : <%= @employee.phone_number %>
+        <br />
+        <strong>email</strong> : <%= @employee.email %>
+    </div>
+</main>

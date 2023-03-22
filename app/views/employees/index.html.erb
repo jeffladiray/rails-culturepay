@@ -1,0 +1,10 @@
+<h1>Employees#index</h1>
+<p>Find me in app/views/employees/index.html.erb</p>
+<main class="container">
+    <div class="header">
+        <h1>Employees</h1>
+        <%= link_to "New employee", new_employee_path, class: "btn btn--primary" %>
+    </div>
+
+    <%= render @employees %>
+</main>
